@@ -1,0 +1,12 @@
+sudo apt update && sudo apt install nginx
+sudo systemctl enable nginx
+
+Файлы конфигурации:
+/etc/nginx/nginx.conf - главный файл конфигурации
+/etc/nginx/sites-available/* - доступные виртуальные хосты (сайты).
+/etc/nginx/sites-enabled/* - актывные виртуальные хосты (сайты)
+/var/www/html - веб-контент по умолчанию
+
+Журналы сервера
+/var/log/nginx/access.log - регистрация каждого клиентского запроса, если Nginx не настроен иначе.
+/var/log/nginx/error.log - журнал ошибок самого веб сервера
